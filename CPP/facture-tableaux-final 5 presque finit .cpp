@@ -6,111 +6,17 @@
 
 using namespace std; // espace de travaille nommer
 string nompizza[10];
-string ingrediantpizza[10][5];
 string ingrediant[50];
-int tabQIngredient[50];
+string ingrediantpizza[10][5];
 
 
 
-bool rechpizza(string nomP){
-	int i=0;
-	while((i<10)and (nompizza[i]!=codepizzacommande)){
-		i++
-	}
-	if(i==10){
-		return(false);
-	}
-	else{
-		return (true);
-	}
-}
-
-
-	
-void affiche1ingradiantbis(string ing){
-	int i=0;int j=0;
-	bool test=false; 
-	while (i<10 && test==false)
-		{
-			if (j>=5){
-				j=0
-			}
-			
-			if(j<5)
-			{
-				if (ingrediantpizza[i][j]==ing)
-				{
-					cout<<"1ere pizza contenant du"<<ing<<" :"<<nompizza[i]<<endl;
-					test=true;
-				}
-			j++;
-			}
-		i++;
-		}
-	if(i>10){
-		cout<<"aucune pizza avec"<<ing<<endl;
-	}
-}
 
 
 
-int ouIngredient(string nomIngredientpara, int& qteDispo){
-	int iretour;
-	int i;
-	bool test =false;
-	while (i<10 && test==false){
-		if(ingrediant[i]==nomIngredientpara){
-			test=true;
-			iretour= i;
-		}
-		i++;
-	}
-if (test == true){
-	qteDispo = tabQIngredient[iretour];
-	return (iretour); // indice de l'ingredient si il existe mais qu'il est pas dispo 
-	}
-else{
-	qteDispo = -1;
-	return (-1); // -1 pour dire qu'il existe pas 
-}
-}
 
-
-
-void saisirQingredient(){
-	int i;
-	for (i=0;i<50;i++){
-		tabQIngredient[i]=1;
-	}	
-	
-}
-
-
-
-void copisaisirLesIngredients()
-{
-  int i;
-     
-  ingrediant[0]="Poivrons";
-  ingrediant[1]="Ail";
-  ingrediant[2]="Anchois";
-  ingrediant[3]="Tomates";
-  ingrediant[4]="cabillaud";
-  ingrediant[5]="Crevettes";
-  ingrediant[6]="Gruyere";
-  ingrediant[7]="Champignons";
-  ingrediant[8]="Oignons";  
-  ingrediant[9]="Lardons";
-  //
-  // puis mettre x dans le reste des ingrédients de 10 à 29
-  for (i=10;i<30;i++)
-     ingrediant[i]="X";
-  
-}  
-
-
-
-int oupizza(string pizza){
+int oupizza(){
+	string pizza = "Margherita";
 	int i = 0;bool test =false; int iretour;
 	while (i<10 && test==false){
 		if(nompizza[i]==pizza){
@@ -119,13 +25,7 @@ int oupizza(string pizza){
 		}
 		i++;
 	}
-if(iretour<10){
 return iretour;
-}
-else{
-iretour=-1;
-return iretour;
-}
 }
 
 
@@ -138,6 +38,20 @@ void verifingredient(int i){
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -168,6 +82,7 @@ cout<<"Ville : ";
 getline(cin, ville);
 
 }
+
 
 
 
@@ -202,24 +117,12 @@ while (quantite>0 && i<10)
     i++;
 }
 
+
 printf("total de la facture : ");
 cout<<totalprix<<endl;
 return i;
 
 }
-
-
-
-/*void afficherpizza()
-{
-	int i = 0;
-	while((i!=10) || (i!=10)){
-		cout <<"nom de la pizza "<<i<<" :"<<nompizza[i]<<endl;;
-		i=i+1;
-	}
-}*/
-
-
 
 void afficherpizza2()
 {
@@ -228,9 +131,6 @@ void afficherpizza2()
 		cout <<"nom de la pizza "<<i<<" :"<<nompizza[i]<<endl;
 	}
 }
-
-
-
 void afficheringrediant()
 {
 	int i;
@@ -242,19 +142,6 @@ void afficheringrediant()
 		cout<<endl;
 	}
 }
-
-
-
-/*void saisirlespizza()
-{
-	int i=0;
-	while((i!=10) || (i!=10)){
-		cout <<"nom de la pizza "<<i<<" :";
-		cin>>nompizza[i];
-		i=i+1;
-	}
-}*/
-
 
 
 void saisirlespizza2(){
@@ -269,13 +156,7 @@ void saisirlespizza2(){
 	nompizza[8]="Sicilienne";
 	nompizza[9]="Calzone";
 }
-
-
-
 void saisirlesingrediant(){
-
-	
-	
 	ingrediantpizza[0][0]="gruyere";
 	ingrediantpizza[0][1]="bri";	
 	ingrediantpizza[0][2]="parmezen";
@@ -322,44 +203,6 @@ void verificationingredient()
 
 
 
-/* void verificationchorizo(int pizzachoisi[])
-{
-	int i;int j;int k=0;int r=0;
-	int d;
-	string temps1;
-	int tempsi;
-	int tempstabl[10];
-	for (i=0;i<10;i++){
-		for(j=0;j<5;j++){
-			temps1=ingrediantpizza[i][j];
-			if (temps1=="chorizo")
-			{
-				tempstabl[k]=i;
-				k++;
-			}
-			else{}
-		}
-	}
-	for (i=0;i<k;i++)
-	{
-		tempsi=tempstabl[i];
-		for(d=0;d<10;d++)
-		{
-			if(tempsi==pizzachoisi[d])
-			{
-				cout<<endl;
-				cout<<endl;
-				cout<<endl;
-				cout<<endl;
-				cout<<endl;
-				cout<<endl;
-				cout<<"y'en a plus en cuisine"<<endl;
-			}
-			else{}
-		}
-	}
-}
-*/
 
 
 
@@ -390,7 +233,6 @@ cout<<"liste pizza contenant du chorizo :"<<endl;
 }
 
 
-
 void afficherpremierchorizo2(){
 	int i;int j;
 	bool test=false; 
@@ -412,44 +254,12 @@ void afficherpremierchorizo2(){
 		}
 }
 
-
-
-void affichePizzaAvecLIngrediant(string ingrediant)
-{
-int i,j;
- 
-     cout<<endl<<"les pizzas avec du "<<ingrediant<<endl;    
-    
-     for (i=0;i<10;i++)
-        {
-             for (j=0;j<5;j++)
-              {                
-                if (ingrediantpizza[i][j]==ingrediant)
-                      cout<<endl<<"c'est la pizza: "<<nompizza[i]<<" qui contient du "<<ingrediantpizza[i][j]<<endl; 
-              }
-        }      
-     
-} 
-
-
-
 void afficherpremierchorizo()
 {
-	int i;int j;int r=0;
+	int i;int j;int k=0;int r=0;
 	string temps1;
 	int tempsi;
 	bool test=false; 
-	/*for (i=0;i<10;i++){
-		for(j=0;j<5;j++){
-			temps1=ingrediantpizza[i][j];
-			if (temps1=="chorizo")
-			{
-				tempstabl[k]=i;
-				k++;
-			}
-			else{}
-		}
-	}*/
 	while (i<10 && test==false)
 		{
 			while(i<5 && test==false)
@@ -458,6 +268,7 @@ void afficherpremierchorizo()
 				if (temps1=="chorizo")
 				{
 					tempsi=i;
+					k++;
 					test=true;
 				}
 				else{}
@@ -468,6 +279,8 @@ void afficherpremierchorizo()
 tempsi=tempsi-1;
 cout<<"1ere pizza contenant du chorizo :"<<nompizza[tempsi]<<endl;
 }
+
+
 
 
 
@@ -507,36 +320,6 @@ void affichagefacture(string civilite,string nom,string prenom,string rue,string
 }
 
 
-
-bool commande(string pizzacommandee){
-	int numpizza;
-	int numingredient; 
-	bool bContinue==true; 
-	int qtedispo;
-	if (numpizza(oupizza(pizzacommandde))>=0){
-		while ((j<5)&&(bContinue==true))
-		{
-			numingredient=ouIngredient(ingrediantpizza[numpizza][j], qtedispo);
-			if (qtedispo==0)
-			{
-				bContinue=false;
-			}
-			else
-			{
-				j++;
-			}
-		}
-	}
-	else {
-		//pizza pas existente 
-		// ou manque ingredient 
-		bContinue=false; 
-	}
-	return bContinue; 
-}
-
-
-
 int main() //programme start ici
 {
 	int i;  // sert ï¿½ gerer le nombre de lignes dans la commande,
@@ -570,9 +353,6 @@ int main() //programme start ici
 
  	saisirlespizza2();
 	saisirlesingrediant();
-	copisaisirLesIngredients();
-	
-	
 	
 	afficherpizza2();
 	afficheringrediant();
@@ -581,27 +361,12 @@ int main() //programme start ici
  
   	afficherchorizo();
   	
-  	string ingrediant="Chorizo";
-	affichePizzaAvecLIngrediant(ingrediant);
-  	
 	afficherpremierchorizo();
 	
  	//verificationingredient();
-	int indice;
-	int qteDispo;
-
-	string pizza="Margherita";
-	placementMargherita = oupizza(pizza);
-	
-	
-	string noming="chorizo";
-	indice=ouIngredient(noming,qteDispo);
-	cout<<endl;
-	cout<<"ingredient "<<noming<<" , a l'indice : "<<indice<<endl;
-	cout<<"quantite restante : "<<qteDispo<<endl;
-	
-	
+	placementMargherita=oupizza();
 	verifingredient(placementMargherita);
+	
 	
 		
     saisirLesInfos(civilite,nom,prenom,rue,cpos,ville);
