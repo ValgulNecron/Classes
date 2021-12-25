@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
                             //.h langage C sinon C++
-/* corrig� n� 5, M. Kreyder */
+/* corrigï¿½ nï¿½ 5, M. Kreyder */
 
 using namespace std; // espace de travaille nommer
 string nompizza[10];
@@ -102,7 +102,7 @@ void copisaisirLesIngredients()
   ingrediant[8]="Oignons";  
   ingrediant[9]="Lardons";
   //
-  // puis mettre x dans le reste des ingr�dients de 10 � 29
+  // puis mettre x dans le reste des ingrédients de 10 à 29
   for (i=10;i<30;i++)
      ingrediant[i]="X";
   
@@ -145,7 +145,7 @@ void saisirLesInfos(string& civilite, string& nom,string& prenom,string& rue,str
 {
 
 system("PAUSE");
-cout<<"reste � mettre en forme la pr�sentation de la facture "<<endl;
+cout<<"reste ï¿½ mettre en forme la prï¿½sentation de la facture "<<endl;
 cout<<"Entrez les coordonnees de la personne: \n";
 
 cout<<"civilite : ";
@@ -181,7 +181,7 @@ printf ("Gestion de la facture \n");
 
 totalprix=0;
 
-printf("quantite : (tapez 0 pour arr�ter)\n");
+printf("quantite : (tapez 0 pour arrêter)\n");
 cin>>quantite;
 
 i=0; 
@@ -196,7 +196,7 @@ while (quantite>0 && i<10)
 
 	totalprix=totalprix+prix*quantite;
 	
-    printf("quantite : (tapez 0 pour arr�ter)\n");
+    printf("quantite : (tapez 0 pour arrêter)\n");
     cin>>quantite;
     
     i++;
@@ -475,7 +475,7 @@ void affichagefacture(string civilite,string nom,string prenom,string rue,string
 {
 	int i;
 	int j;
-    cout<<"affichage d�finitif de la pizza"<<endl;
+    cout<<"affichage dï¿½finitif de la pizza"<<endl;
     cout<<endl;
     cout<<endl;
     cout<<"pizza rabbit"<<endl;
@@ -490,7 +490,7 @@ void affichagefacture(string civilite,string nom,string prenom,string rue,string
     cout<<endl;
     cout<<"ligne de la commande "<<endl;
 
-    cout<<"      quantit�"<<"    "<<"r�f�rence"<<"    "<<"d�signation"<<"  prix    "<<"total"<<endl;
+    cout<<"      quantitï¿½"<<"    "<<"rï¿½fï¿½rence"<<"    "<<"dï¿½signation"<<"  prix    "<<"total"<<endl;
 
     for (j=0;j<nbreligne;j++)
     {
@@ -539,7 +539,7 @@ bool commande(string pizzacommandee){
 
 int main() //programme start ici
 {
-	int i;  // sert � gerer le nombre de lignes dans la commande,
+	int i;  // sert ï¿½ gerer le nombre de lignes dans la commande,
     int j; // permet l'affichage des lignes de la facture de la pizza
 	string civilite;
 	string nom;
@@ -552,7 +552,7 @@ int main() //programme start ici
 	int quantite;
 	double prix;
     int quantitepizza[10];  
-	double prixpizza[10];           //qui vont de nompizza[0]� nompizza[9]
+	double prixpizza[10];           //qui vont de nompizza[0]ï¿½ nompizza[9]
 	// les 3 tableaux son lier
 	int pizzachoisi[10];
 	int nbreligne; /* nombre de ligne dans la commande */
@@ -562,7 +562,7 @@ int main() //programme start ici
 	
 	int placementMargherita;
 	
-/* d�but du programme */
+/* dï¿½but du programme */
 
 
 /* appelle procedure avec parametre
