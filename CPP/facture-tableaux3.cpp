@@ -2,17 +2,17 @@
 #include <iostream>
 #include <string>
 
-/* corrigé n° 9 avec ingrédients */
+/* corrigÃ© nÂ° 9 avec ingrÃ©dients */
 
 using namespace std;
 
 string nompizza[10];
 string nomIngredient[30];
 
-string tabNomPizzaIngredients[10][5]; //les 10 pizzas avec chacune 5 ingrédients maxi
+string tabNomPizzaIngredients[10][5]; //les 10 pizzas avec chacune 5 ingrÃ©dients maxi
 
-int tabQIngredient[30];  // les quantités (en kilo) pour chaque engrédient
-                         // si une quantité est à zéro, il n'y en a plus 
+int tabQIngredient[30];  // les quantitÃ©s (en kilo) pour chaque engrÃ©dient
+                         // si une quantitÃ© est Ã  zÃ©ro, il n'y en a plus 
                          // A UTILISER POUR LES PROCHAINES QUESTIONS
 
 void saisirLesPizzas()
@@ -23,8 +23,8 @@ void saisirLesPizzas()
   nompizza[3]="3 fromages";
   nompizza[4]="Kebab";
   nompizza[5]="Campagnarde";
-  nompizza[6]="Végétarienne";
-  nompizza[7]="Norvégienne";
+  nompizza[6]="VÃ©gÃ©tarienne";
+  nompizza[7]="NorvÃ©gienne";
   nompizza[8]="Margarita";  
   nompizza[9]="Calzone";
 }              
@@ -33,7 +33,7 @@ void affichePizza()
 {
 int i;
  
-     cout<<"les pizzas de la pizzéria"<<endl;    
+     cout<<"les pizzas de la pizzÃ©ria"<<endl;    
      for (i=0;i<10;i++)
      cout<<nompizza[i]<<endl;
 }
@@ -54,7 +54,7 @@ void saisirLesIngredients()
   nomIngredient[10]="ananas";
 
   //
-  // puis mettre x dans le reste des ingrédients de 10 à 29
+  // puis mettre x dans le reste des ingrÃ©dients de 10 Ã  29
   for (i=11;i<30;i++)
      nomIngredient[i]="X";
   
@@ -64,7 +64,7 @@ void afficheIngredients()
 {
 int i;
  
-     cout<<endl<<"les ingrédients de la pizzéria"<<endl;    
+     cout<<endl<<"les ingrÃ©dients de la pizzÃ©ria"<<endl;    
      for (i=0;i<30;i++)
      cout<<nomIngredient[i]<<endl;
      
@@ -101,11 +101,11 @@ void afficheLesIngredientsPizzas()
 {
 int i,j;
  
-     cout<<endl<<"les pizzas avec les ingrédients"<<endl;    
+     cout<<endl<<"les pizzas avec les ingrÃ©dients"<<endl;    
     
      for (i=0;i<10;i++)
         {
-          cout<<endl<<"c'est la pizza: "<<nompizza[i]<<" avec les ingrédients: "<<endl;             
+          cout<<endl<<"c'est la pizza: "<<nompizza[i]<<" avec les ingrÃ©dients: "<<endl;             
           for (j=0;j<5;j++)
               {                
                 cout<<tabNomPizzaIngredients[i][j]<<endl;
@@ -164,7 +164,7 @@ int ouPizza(string nomPizzaParam)   // c'est une fonction
                   }
              else
                 {
-                 i++;  // élément suivant
+                 i++;  // Ã©lÃ©ment suivant
                  } 
             }
   if (btrouve==true)
@@ -175,8 +175,8 @@ int ouPizza(string nomPizzaParam)   // c'est une fonction
 }               
      
 // Ecrire la fonction , int ouIngredient(string nomIngredient)
-// fonction qui contrôle si l'ingredient existe
-// Ensuite, utiliser le tableau tabQIngredient[30] pour voir si l'ingtrédient est dispo
+// fonction qui contrÃ´le si l'ingredient existe
+// Ensuite, utiliser le tableau tabQIngredient[30] pour voir si l'ingtrÃ©dient est dispo
 
 int ouIngredient(string nomIngredient){
 	int i=0;int j=0;
@@ -230,7 +230,7 @@ printf ("Gestion de la facture \n");
 
 totalprix=0;
 
-printf("quantite : (tapez 0 pour arrêter)\n");
+printf("quantite : (tapez 0 pour arrÃªter)\n");
 cin>>quantite;
 
 i=0; // c'est le premiere pizza
@@ -245,7 +245,7 @@ while (quantite>0)
 
 	totalprix=totalprix+prix*quantite;
 	
-    printf("quantite : (tapez 0 pour arrêter)\n");
+    printf("quantite : (tapez 0 pour arrÃªter)\n");
     cin>>quantite;
     
     i=i+1;    // i++;
@@ -263,12 +263,12 @@ void afffacture(string civilite, string nom,string prenom,string rue,string cpos
 int j;                       
 
 system("PAUSE");
-cout<<"reste à mettre en forme la présentation de la facture "<<endl;
+cout<<"reste Ã  mettre en forme la prÃ©sentation de la facture "<<endl;
 system("PAUSE");
 
 // pour afficher
 
-cout<<"affichage définitif de la pizza"<<endl;
+cout<<"affichage dÃ©finitif de la pizza"<<endl;
 cout<<endl;
 cout<<endl;
 cout<<"pizza rabbit"<<endl;
@@ -283,7 +283,7 @@ cout<<"                                     "<<cpos<<" "<<ville<<endl;
 cout<<endl;
 cout<<"ligne de la commande "<<endl;
 
-cout<<"      quantité"<<"    "<<"référence"<<"    "<<"désignation"<<"  prix    "<<"total"<<endl;
+cout<<"      quantitÃ©"<<"    "<<"rÃ©fÃ©rence"<<"    "<<"dÃ©signation"<<"  prix    "<<"total"<<endl;
 
 for (j=0;j<nbreligne;j++)
 {
@@ -303,7 +303,7 @@ cout<<endl;
 
 int main()
 {
-	int i;  // sert à gerer le nombre de lignes dans la commande,
+	int i;  // sert Ã  gerer le nombre de lignes dans la commande,
     int j; // permet l'affichage des lignes de la facture de la pizza  
 
 	string civilite;
@@ -322,9 +322,9 @@ int main()
 	string ingrediant; 
 	int nbreligne; /* nombre de ligne dans la commande */
 	
-	int indice; // contient le numéro de pizza dans le tableau des pizzas
+	int indice; // contient le numÃ©ro de pizza dans le tableau des pizzas
 
-/* début du programme */
+/* dÃ©but du programme */
 
 saisirLesPizzas();
 
@@ -344,20 +344,20 @@ affichePizzaAvecLIngrediant(ingrediant);
 
 indice = ouPizza("Calzone");
 cout<<endl;
-cout<<"pizza Calzone, à l'indice : " <<indice;
+cout<<"pizza Calzone, Ã  l'indice : " <<indice;
 cout<<endl;
 
 
  
 
-string nomPizza ="Hawaï"
+string nomPizza ="HawaÃ¯"
 indice = ouPizza(nomPizza);
 cout<<endl;
-cout<<"pizza Calzone, à l'indice : " <<indice;
+cout<<"pizza Calzone, Ã  l'indice : " <<indice;
 cout<<endl;
 // Ecrire est-ce que je peux faire une calzone ??
-// Il faut vérifier la présence des ingrédients.
-// avec la bonne table des ingrédients
+// Il faut vÃ©rifier la prÃ©sence des ingrÃ©dients.
+// avec la bonne table des ingrÃ©dients
 
 
 /* traitement du client */
