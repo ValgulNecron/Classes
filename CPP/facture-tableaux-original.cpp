@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-/* corrigé n° 5, M. Kreyder */
+/* corrigÃ© nÂ° 5, M. Kreyder */
 
 using namespace std;
 
@@ -80,7 +80,7 @@ return i;
 
 int main()
 {
-	int i;  // sert à gerer le nombre de lignes dans la commande,
+	int i;  // sert Ã  gerer le nombre de lignes dans la commande,
     int j; // permet l'affichage des lignes de la facture de la pizza  
 
 	string civilite;
@@ -99,7 +99,7 @@ int main()
 	
 	int nbreligne; /* nombre de ligne dans la commande */
 	
-/* début du programme */
+/* dÃ©but du programme */
 
 saisirLesInfos(civilite,nom,prenom,rue,cpos,ville);
 
@@ -108,12 +108,12 @@ nbreligne=calculprix(prixpizza, quantitepizza, totalprix);
  
 
 system("PAUSE");
-cout<<"reste à mettre en forme la présentation de la facture "<<endl;
+cout<<"reste Ã  mettre en forme la prÃ©sentation de la facture "<<endl;
 system("PAUSE");
 
 // pour afficher
 
-cout<<"affichage définitif de la pizza"<<endl;
+cout<<"affichage dÃ©finitif de la pizza"<<endl;
 cout<<endl;
 cout<<endl;
 cout<<"pizza rabbit"<<endl;
@@ -128,7 +128,7 @@ cout<<"                                     "<<cpos<<" "<<ville<<endl;
 cout<<endl;
 cout<<"ligne de la commande "<<endl;
 
-cout<<"      quantité"<<"    "<<"référence"<<"    "<<"désignation"<<"  prix    "<<"total"<<endl;
+cout<<"      quantitÃ©"<<"    "<<"rÃ©fÃ©rence"<<"    "<<"dÃ©signation"<<"  prix    "<<"total"<<endl;
 
 for (j=0;j<nbreligne;j++)
 {
