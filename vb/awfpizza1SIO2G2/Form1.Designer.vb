@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.calcule = New System.Windows.Forms.Button()
         Me.RDgrand = New System.Windows.Forms.RadioButton()
@@ -41,13 +41,13 @@ Partial Class Form1
         Me.RDnormal = New System.Windows.Forms.RadioButton()
         Me.RDfine = New System.Windows.Forms.RadioButton()
         Me.RDepaisse = New System.Windows.Forms.RadioButton()
-        Me.GBconso = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RD = New System.Windows.Forms.RadioButton()
+        Me.rdemporter = New System.Windows.Forms.RadioButton()
+        Me.RDplace = New System.Windows.Forms.RadioButton()
+        Me.btexit = New System.Windows.Forms.Button()
+        Me.BTreset = New System.Windows.Forms.Button()
         Me.GBtaille.SuspendLayout()
         Me.GBing.SuspendLayout()
         Me.GBcroute.SuspendLayout()
-        Me.GBconso.SuspendLayout()
         Me.SuspendLayout()
         '
         'calcule
@@ -66,13 +66,13 @@ Partial Class Form1
         Me.RDgrand.Name = "RDgrand"
         Me.RDgrand.Size = New System.Drawing.Size(62, 19)
         Me.RDgrand.TabIndex = 3
-        Me.RDgrand.TabStop = True
         Me.RDgrand.Text = "grande"
         Me.RDgrand.UseVisualStyleBackColor = True
         '
         'RDpetit
         '
         Me.RDpetit.AutoSize = True
+        Me.RDpetit.Checked = True
         Me.RDpetit.Location = New System.Drawing.Point(22, 22)
         Me.RDpetit.Name = "RDpetit"
         Me.RDpetit.Size = New System.Drawing.Size(55, 19)
@@ -88,7 +88,6 @@ Partial Class Form1
         Me.RDmoyen.Name = "RDmoyen"
         Me.RDmoyen.Size = New System.Drawing.Size(75, 19)
         Me.RDmoyen.TabIndex = 4
-        Me.RDmoyen.TabStop = True
         Me.RDmoyen.Text = "moyenne"
         Me.RDmoyen.UseVisualStyleBackColor = True
         '
@@ -207,7 +206,7 @@ Partial Class Form1
         Me.achpiz.Name = "achpiz"
         Me.achpiz.Size = New System.Drawing.Size(129, 38)
         Me.achpiz.TabIndex = 11
-        Me.achpiz.Text = "achat pizza"
+        Me.achpiz.Text = "Achat pizza"
         Me.achpiz.UseVisualStyleBackColor = True
         '
         'GBcroute
@@ -229,13 +228,13 @@ Partial Class Form1
         Me.RDnormal.Name = "RDnormal"
         Me.RDnormal.Size = New System.Drawing.Size(63, 19)
         Me.RDnormal.TabIndex = 4
-        Me.RDnormal.TabStop = True
         Me.RDnormal.Text = "normal"
         Me.RDnormal.UseVisualStyleBackColor = True
         '
         'RDfine
         '
         Me.RDfine.AutoSize = True
+        Me.RDfine.Checked = True
         Me.RDfine.Location = New System.Drawing.Point(22, 22)
         Me.RDfine.Name = "RDfine"
         Me.RDfine.Size = New System.Drawing.Size(45, 19)
@@ -251,55 +250,67 @@ Partial Class Form1
         Me.RDepaisse.Name = "RDepaisse"
         Me.RDepaisse.Size = New System.Drawing.Size(63, 19)
         Me.RDepaisse.TabIndex = 3
-        Me.RDepaisse.TabStop = True
         Me.RDepaisse.Text = "epaisse"
         Me.RDepaisse.UseVisualStyleBackColor = True
         '
-        'GBconso
+        'rdemporter
         '
-        Me.GBconso.Controls.Add(Me.RadioButton1)
-        Me.GBconso.Controls.Add(Me.RD)
-        Me.GBconso.Location = New System.Drawing.Point(12, 118)
-        Me.GBconso.Name = "GBconso"
-        Me.GBconso.Size = New System.Drawing.Size(200, 77)
-        Me.GBconso.TabIndex = 6
-        Me.GBconso.TabStop = False
-        Me.GBconso.Text = "mode de consomation"
+        Me.rdemporter.AutoSize = True
+        Me.rdemporter.Checked = True
+        Me.rdemporter.Location = New System.Drawing.Point(14, 118)
+        Me.rdemporter.Name = "rdemporter"
+        Me.rdemporter.Size = New System.Drawing.Size(83, 19)
+        Me.rdemporter.TabIndex = 2
+        Me.rdemporter.TabStop = True
+        Me.rdemporter.Text = "a emporter"
+        Me.rdemporter.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RDplace
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(22, 47)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(63, 19)
-        Me.RadioButton1.TabIndex = 4
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "normal"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RDplace.AutoSize = True
+        Me.RDplace.Location = New System.Drawing.Point(140, 118)
+        Me.RDplace.Name = "RDplace"
+        Me.RDplace.Size = New System.Drawing.Size(72, 19)
+        Me.RDplace.TabIndex = 4
+        Me.RDplace.Text = "sur place"
+        Me.RDplace.UseVisualStyleBackColor = True
         '
-        'RD
+        'btexit
         '
-        Me.RD.AutoSize = True
-        Me.RD.Location = New System.Drawing.Point(22, 22)
-        Me.RD.Name = "RD"
-        Me.RD.Size = New System.Drawing.Size(45, 19)
-        Me.RD.TabIndex = 2
-        Me.RD.TabStop = True
-        Me.RD.Text = "fine"
-        Me.RD.UseVisualStyleBackColor = True
+        Me.btexit.Location = New System.Drawing.Point(686, 400)
+        Me.btexit.Name = "btexit"
+        Me.btexit.Size = New System.Drawing.Size(111, 38)
+        Me.btexit.TabIndex = 12
+        Me.btexit.Text = "Exit"
+        Me.btexit.UseVisualStyleBackColor = True
+        '
+        'BTreset
+        '
+        Me.BTreset.Location = New System.Drawing.Point(340, 400)
+        Me.BTreset.Name = "BTreset"
+        Me.BTreset.Size = New System.Drawing.Size(141, 38)
+        Me.BTreset.TabIndex = 13
+        Me.BTreset.Text = "Initialisation"
+        Me.BTreset.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.GBconso)
+        Me.Controls.Add(Me.BTreset)
+        Me.Controls.Add(Me.btexit)
+        Me.Controls.Add(Me.RDplace)
+        Me.Controls.Add(Me.rdemporter)
         Me.Controls.Add(Me.GBcroute)
         Me.Controls.Add(Me.achpiz)
         Me.Controls.Add(Me.GBing)
         Me.Controls.Add(Me.GBtaille)
         Me.Controls.Add(Me.calcule)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Form1"
         Me.GBtaille.ResumeLayout(False)
         Me.GBtaille.PerformLayout()
@@ -307,9 +318,8 @@ Partial Class Form1
         Me.GBing.PerformLayout()
         Me.GBcroute.ResumeLayout(False)
         Me.GBcroute.PerformLayout()
-        Me.GBconso.ResumeLayout(False)
-        Me.GBconso.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -332,7 +342,8 @@ Partial Class Form1
     Friend WithEvents RDnormal As RadioButton
     Friend WithEvents RDfine As RadioButton
     Friend WithEvents RDepaisse As RadioButton
-    Friend WithEvents GBconso As GroupBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RD As RadioButton
+    Friend WithEvents rdemporter As RadioButton
+    Friend WithEvents RDplace As RadioButton
+    Friend WithEvents btexit As Button
+    Friend WithEvents BTreset As Button
 End Class

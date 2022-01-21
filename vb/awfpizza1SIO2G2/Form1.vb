@@ -2,7 +2,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles calcule.Click
         Dim i As Integer
         Dim radio As RadioButton
-        'If (RDpetit.Checked) Then
+        'If (RDpetit.Checked) Thene
         '    taille = RDpetit.Text
         'ElseIf (RDmoyen.Checked) Then
         '    taille = RDmoyen.Text
@@ -34,24 +34,35 @@
             i += 1
             radio = GBtaille.Controls(i)
         Loop
-        Dim cbing As CheckBox
-        Dim ingrediant As String
-
         affichage = GBtaille.Controls(i).Text
+
+
+
+        Dim cbing As CheckBox
+        Dim R As Integer
+        Dim premier As Boolean
+        premier = True
+        R = 0
         i = 0
-        ingrediant = ""
         cbing = GBing.Controls(i)
-        For i = 0 To GBing.Controls.Count - 1
-            cbing = GBing.Controls(i)
+        For i = 1 To 8
             If cbing.Checked Then
-                ingrediant += vbCrLf & cbing.Text
+                If premier = True Then
+                    affichage += vbCrLf & cbing.Text
+                    R += 1
+                End If
             End If
         Next
-        If ingrediant = "" Then
-            MsgBox("pauvre pizza")
+
+
+        If R = 5 Then
+            MsgBox("trop d'ingrediant")
+        ElseIf R = 0 Then
+            MsgBox("pizza pauvre")
         Else
-            affichage += ingrediant
         End If
+
+
         i = 0
         radio = GBcroute.Controls(i)
         Do While radio.Checked = False
@@ -60,6 +71,20 @@
         Loop
         affichage += vbCrLf & GBcroute.Controls(i).Text
 
+        If rdemporter.Checked = True Then
+            affichage += vbCrLf & rdemporter.Text
+        ElseIf RDplace.Checked = True Then
+            affichage += vbCrLf & RDplace.Text
+        End If
         MsgBox(affichage)
+    End Sub
+
+    Private Sub BTreset_Click(sender As Object, e As EventArgs) Handles BTreset.Click
+        Me.Controls.Clear()
+        Me.InitializeComponent()
+    End Sub
+
+    Private Sub btexit_Click(sender As Object, e As EventArgs) Handles btexit.Click
+        Me.Close()
     End Sub
 End Class
