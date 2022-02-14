@@ -1,0 +1,6 @@
+C:\Users\Valgul\OneDrive\Documents\repos VS\consvoyage\voyage\voyage\bin\Debug\voyage.dll
+C:\Users\Valgul\OneDrive\Documents\repos VS\consvoyage\voyage\voyage\bin\Debug\voyage.pdb
+C:\Users\Valgul\OneDrive\Documents\repos VS\consvoyage\voyage\voyage\obj\Debug\voyage.csproj.CoreCompileInputs.cache
+C:\Users\Valgul\OneDrive\Documents\repos VS\consvoyage\voyage\voyage\obj\Debug\voyage.dll
+C:\Users\Valgul\OneDrive\Documents\repos VS\consvoyage\voyage\voyage\obj\Debug\voyage.pdb
+C:\Users\Valgul\OneDrive\Documents\repos VS\consvoyage\voyage\voyage\obj\Debug\voyage.csproj.AssemblyReference.cache
