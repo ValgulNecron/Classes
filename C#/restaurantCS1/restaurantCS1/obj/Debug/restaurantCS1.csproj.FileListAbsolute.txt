@@ -1,0 +1,6 @@
+C:\repos vs\restaurantCS1\restaurantCS1\obj\Debug\restaurantCS1.csproj.AssemblyReference.cache
+C:\repos vs\restaurantCS1\restaurantCS1\obj\Debug\restaurantCS1.csproj.CoreCompileInputs.cache
+C:\repos vs\restaurantCS1\restaurantCS1\bin\Debug\restaurantCS1.dll
+C:\repos vs\restaurantCS1\restaurantCS1\bin\Debug\restaurantCS1.pdb
+C:\repos vs\restaurantCS1\restaurantCS1\obj\Debug\restaurantCS1.dll
+C:\repos vs\restaurantCS1\restaurantCS1\obj\Debug\restaurantCS1.pdb
