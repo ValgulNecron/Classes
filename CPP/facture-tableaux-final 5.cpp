@@ -103,7 +103,7 @@ void affichagefacture(string civilite,string nom,string prenom,string rue,string
     cout<<endl;
     cout<<"                                                        total: "<<totalprix;
     cout<<endl;
-    cout<<endl;
+    c<<endl;
 
     system("PAUSE");
 }
