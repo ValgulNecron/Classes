@@ -1,0 +1,21 @@
+form {
+	display:inline;
+}
+.Body {
+	    background-color: #4C4C4C;
+}
+.Input {
+    background-color: #5E6263;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    border-radius: 20px;
+}
+
+
+.Obligatoire {
+    color: #BD0926;
+	
+}
+.InputF{
+	color: #BD6723;
+}

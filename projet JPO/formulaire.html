@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>login</title>
+		<link rel="stylesheet" href="formulaire.css">
+  	</head>
+  	<body class="Body">
+		<form action="formulaire.php" method="POST" class="Formu">
+		<label class="Obligatoire Nom">Nom*</label>
+      		<input type="text" name="Nom" required class="form-control Input InputF">
+	  	<br>
+	  	<label class="Obligatoire Prenom">Prénom*</label>
+     		<input type="text" name="NomFormation" required class="form-control Input InputF">
+	 	<br>
+	 	<label class="Obligatoire NomF">Nom de la formation actuelle*</label>
+    		<input type="text" name="Prénom" required class="form-control Input InputF">
+	  	<br>
+		<label class="Obligatoire">Nom de l'établisemenet actuelle*</label>
+      		<input type="text" name="NomEtablisement" required class="form-control Input InputF">
+      		<br>
+      		<label class="Pobli">Email</label>
+		<input type="text" name="Email" class="Input InputF" placeholder="Null">
+		<br>
+      		<label class="Pobli">Numero de téléphone</label>
+		<input type="tel" name="NumeroDeTelephone" class="Input InputF" placeholder="0000000000">
+		<br>
+      		<label class="Pobli">Ville</label>
+		<input type="text" name="Ville" class="Input InputF" placeholder="Null">
+		<br>
+      		<label class="Pobli">Rue</label>
+		<input type="text" name="Rue" class="Input InputF" placeholder="Null">
+      		<br>
+      		<label class="Pobli">Code postale</label>
+		<input type="text" name="CodePostale" class="Input InputF" placeholder="00000">
+		<br>
+      		<label class="Pobli">Numero de rue</label>
+		<input type="text" name="NumeroDeRue" class="Input InputF" placeholder="0">
+      		<br>
+      		<input type="checkbox" name="Interet">
+      		<label>Ête vous interesser par la formation ?</label>
+      		<br>
+      		<input type="checkbox" name="Postuler">
+      		<label>Compter vous postuler dans un autre etablisement</label>
+      		<br>
+      		<input type="checkbox" name="AccepteTraitement" required class="form-control">
+      		<label>En cochant cette case vous accepter que vos donnée soit stocker et utiliser dans le cadre de la journée porte ouverte</label>
+		<br>
+      		<input type="submit" name="Envoyer" value="envoyer">
+    	</form>
+    	<form action="./reset.php" method="POST">
+      		<input type="submit" name="Effacer" value="Effacer">
+    	</form>
+	</body>
+</html>

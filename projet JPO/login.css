@@ -1,0 +1,34 @@
+.Body {
+	    background-color: #4C4C4C;
+}
+.Input {
+    background-color: #5E6263;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    border-radius: 20px;
+}
+.Form {
+    margin-left: 45%;
+    margin-right: 35%;
+}
+.CodeFormation {
+    color: #BD6723;
+	text-shadow: 0px 0px #BD0926;
+
+}
+.MotDePasse {
+	color: #BD6723;
+    text-shadow: 0px 0px #BD0926;
+}
+p{
+    margin-top: 2%;
+    margin-left: 45%;
+    margin-right: 45%;
+    color: #BD0926;
+}
+select{
+    background-color: #5E6263;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    border-radius: 20px;
+}
